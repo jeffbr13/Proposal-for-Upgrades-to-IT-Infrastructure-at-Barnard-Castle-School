@@ -29,3 +29,9 @@ for instance. Then in the directory with the report source file, run
 
 You can just delete the extra files generated, as all you need to keep are
 the source and pdf file.
+
+
+##Diagram details##
+
+Diagrams are made in LibreOffice Draw, areas are blue-grey,
+lines are light-grey.
