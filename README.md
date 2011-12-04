@@ -22,6 +22,16 @@ Form academic committee.
 
 ##To generate PDF after changes to source:##
 
+You first need to have some form of [LateX][] installed on your computer, texlive
+for instance. Then in the directory with the report source file, run
+
     pdflatex "./Initial Proposal.tex"
 
-and just remember to delete the extra files generated.
+You can just delete the extra files generated, as all you need to keep are
+the source and pdf file.
+
+
+
+
+
+[LaTeX]     http://en.wikipedia.org/wiki/LaTeX      "Wikipedia article on LaTeX typesetting system"
