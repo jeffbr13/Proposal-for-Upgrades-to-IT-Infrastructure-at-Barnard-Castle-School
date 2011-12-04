@@ -257,9 +257,6 @@ cover the rest of the school, then the minor details and kinks can be worked out
 before extensive investment is made.
 
 
-Microwaves! O noes!
-
-
 There are two routes to take. We can either bring in outside companies, or
 endeavour to do it in-house. Either way, a clear set of specifications are
 necessary to advise the network architecture choices.
@@ -277,14 +274,39 @@ traffic, and allow future replacement and upgrades. Hard connections exhibit
 almost no lag, are generally bulletproof in comparison to WiFi, and cost even
 less, after the cables are installed.
 
-There are systems which allow you to 'daisychain' routers together wirelessly,
-so that the can operate without a hard link to the central network, but they are
+
+Systems exist which allow you to 'daisychain' routers together wirelessly,
+so that they can operate without a hard link to the central network, but they are
 usually limited to a single manufacturer's products, and are poorly supported.
 Because of the way that network traffic works, it also cuts speed in half for
 every step away from the central network you are. This isn't a huge deal when
 surfing the internet at home, but with more than a few network clients accessing
 large documents on a school network, for example, the airwaves soon become
 saturated, lowering speed for everyone.
+
+
+Past physical installation, some consideration must be given to network
+architecture, as well as the matter of content filtering.
+
+A server currently sits directly between the unfiltered internet connection and
+the rest of the campus. The school content filter and web cache is used not only
+to control access to the internet, but to accelerate multiple requests for the
+same resource by storing a local version, which can be returned much faster than
+if it was to be sent over the internet each time. This is what keeps internet
+access usable at present, when classes of pupils log on to the same website
+all at once.
+
+The caching software is sold to us directly by RM. However, as far as can can
+be discerned at a glance, it is simply a customised version of
+Squid\footnote{\href{http://en.wikipedia.org/wiki/Squid_(software)}{Wikipedia article on Squid web cache software}},
+a freely available web cache. If this has been paid for outright, then there
+may be little reason to change it. But with minimal effort, we can install a
+copy on a single highly specified computer to act as a a web cache which we
+can control and optimise. The harder task will be setting it up to act as a
+content filter as well. This process is well documented and supported though,
+and will give the school greater control and smarter filtering.
+
+
 
 
 Access to the access points can be controlled a number of ways:
