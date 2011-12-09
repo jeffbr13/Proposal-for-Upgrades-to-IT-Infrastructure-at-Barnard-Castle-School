@@ -240,30 +240,6 @@ necessary in a few years.
 
 
 
-
-
-
-\section{Email, File Storage, and Printing}
-
-
-%TODO:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 \section{Wireless Network and Internet Access}
 
 
@@ -388,10 +364,11 @@ and will give the school greater control and smarter filtering.
 
 The filtering server will not only be able to intercept and block banned
 material, but also log attempts at accessing it. Depending on how we regulate
-access to the network, there are a few good solutions to this problem;
-providing a network address to each individual user; keeping a record of
-MAC codes, unique fingerprints, for every device authorised to be used on the
-network; or simply using network credentials to log in to the service.
+access to the network, there are a few solutions to this problem;
+providing a network address to each individual user (easy to change,);
+keeping a record of device MAC codes, the unique fingerprints for every item
+authorised to be used on the network;
+or simply using network credentials to log in to the service.
 
 
 We are proposing a school network which is more flexible and open than before,
@@ -415,6 +392,72 @@ are no more than bins for social network notifications anyway, and blanket
 bans on these services are bound to seem more restrictive than protective.
 
 
+
+
+
+
+\section{Network Services: Email, File Storage, Printing}
+
+
+The school currently uses systems built by RM around standard components used
+in any business. None of these need to be replaced, but it should be
+considered whether they provide the best solution to our situation, as all are
+easily replaceable.
+
+
+\subsection{Email}
+
+Email is provided by a Microsoft Exchange server. This is industry standard, and
+should certainly be kept on. Flexible email, calendars, et.c. are integral
+to staff communication within the school, the Exchange server allows access
+through either a web interface or any of the plethora of devices which
+can make use of Exchange's organisational capabilites.
+
+
+\subsection{File Storage and User Accounts}
+
+File Storage and user accounts are provided by the same package of software,
+either a Windows Server customised by RM, or a free Linux distribution
+running the SAMBA software suite, which conforms to the same specification.
+RM's solution needs to be looked at in detail, as already it falls short of
+being fully functional, and fit for purpose. Parts of it (web access) are
+fundamentally broken. User storage needs to be accessible in as many ways
+as possible, by computers over the local network, and over the web.
+
+
+Storage capacity is a failing too. With the cost of hard drives
+these days (<£50 per thousand Gigabytes), there's no need to be limited to
+a hundred Megabytes per user.
+
+
+A larger and more flexible space for storing data, combined with simple
+guidance, means that the school can be considered a secure and backed-up
+location, accessible from anywhere, safe for data.
+School account can become the space to keep copies of important documents,
+coursework assignments, past papers, rather than the shuffle of memory sticks
+and hard drives these things are usually spread over now.
+
+
+\subsection{Printing}
+
+As mentioned before, school accounts are often considered little more than
+conduits to the printers. They are the most useful resource the school
+possesses. The quality and speed of equipment that can be shared inside of
+school far outstrips what can be achieved by most students at home.
+
+
+The school printers are already accessible over the network, and any computer
+connected to it can print to one of them. All students need to know is how to
+set up network printing on their own computers, and they can make use of them.
+
+The only problem is that it is not obvious which unit is which, when viewed
+blindly over the network. This can be tackled concurrently with WiFi network
+installation. Each room with a printer is a 'zone' --- IT classrooms,
+study areas, the library --- is a 'zone', likely to have it's own access point
+anyway. By keeping each of these as a subnet to the central network, the
+printers should only be immediately visible to computers on the local network,
+and in edge cases should allow connection to the device when its IP address
+is known.
 
 
 
