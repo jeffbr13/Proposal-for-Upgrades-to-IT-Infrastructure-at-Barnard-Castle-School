@@ -1,5 +1,7 @@
 #README#
 
+(Download the proposal itself [here](https://github.com/jeffbr13/Proposal-for-Upgrades-to-IT-Infrastructure-at-Barnard-Castle-School/blob/master/Initial%20Proposal.pdf?raw=true))
+
 This is a proposal for upgrades to the campus internet connection,
 installation of wireless networking accessible to both students and staff,
 and smarter ways of working with IT in the school.
